@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuyList</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<div class="container1">
+    <div class="add">
+        <input class="product-name" type="text" placeholder="Назва товару">
+        <button class="add-button" type="submit" data-tooltip="Додати товар">Додати</button>
+    </div>
+    <div class="productneed first">
+        <div class="name" contenteditable="false">
+            <p>Помідори</p>
+        </div>
+        <div class="count">
+            <button class="minus" data-tooltip="Зменшити к-сть">-</button>
+            <span class="number">2</span>
+            <button class="plus" data-tooltip="Збільшіти к-сть">+</button>
+        </div>
+        <div class="status">
+            <button class="isBought" data-tooltip="Статус товара">Не куплено</button>
+        </div>
+    </div>
+    <div class="productneed second">
+        <div class="name" contenteditable="true" >
+            <p>Печиво</p>
+        </div>
+        <div class="count">
+            <button class="minus"  data-tooltip="Зменшити к-сть">-</button>
+            <span class="number">2</span>
+            <button class="plus" data-tooltip="Збільшіти  к-сть">+</button>
+        </div>
+        <div class="status">
+            <button class="isBought" data-tooltip="Статус товара">Куплено</button>
+            <button class="remove" data-tooltip="Видалити товар">x</button>
+        </div>
+    </div>
+    <div class="productneed third">
+        <div class="name" contenteditable="true">
+            <p contenteditable="true">Сир</p>
+        </div>
+        <div class="count">
+            <button class="minus" data-tooltip="Зменшити к-сть">-</button>
+            <span class="number">1</span>
+            <button class="plus" data-tooltip="Збільшіти к-сть">+</button>
+        </div>
+        <div class="status">
+            <button class="isBought" data-tooltip="Статус товара">Куплено</button>
+            <button class="remove" data-tooltip="Видалити товар">x</button>
+        </div>
+    </div>
+</div>
+
+<div class="container2">
+    <h2 class="headline">Залишилось</h2>
+    <div class="leftitem">
+                <span class="productleft">
+                    Печиво
+                    <span class="countleft">2</span>
+                </span>
+        <span class="productleft">
+                    Сир
+                    <span class="countleft">1</span>
+                </span>
+    </div>
+    <h2 class="headline">Куплено</h2>
+    <div class="itemisbought">
+                <span class="productleft">
+                    Помідори
+                    <span class="countleft">2</span>
+                </span>
+    </div>
+</div>
+    <span class="badge">
+        <p class="badge-text buylist-text">Buy List</p>
+        <p class="badge-text whocreate">Виконала:<br>Довгань Вікторія</p>
+    </span>
+</body>
+</html>
